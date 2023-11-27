@@ -1,3 +1,3 @@
 # Shattered Nefertiti
 
-live - https://unrivaled-meerkat-a7f6fd.netlify.app/ 
+live - https://thunderous-tapioca-6d1fef.netlify.app/
