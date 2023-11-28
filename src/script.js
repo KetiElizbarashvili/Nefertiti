@@ -105,9 +105,7 @@ loader.load( "https://threejs.org/examples/models/gltf/Nefertiti/Nefertiti.glb",
            
             
                         
-            vPos = transformed;
-            vNor = normal;
-          `
+         
         );
         console.log(shader.vertexShader)
         shader.fragmentShader = `
