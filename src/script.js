@@ -102,17 +102,7 @@ loader.load( "https://threejs.org/examples/models/gltf/Nefertiti/Nefertiti.glb",
             float amp = hash(vec2(position.x, position.y + position.z)) * 0.15;
             vec3 tr = initPhase + time * 2.;
             transformed += vec3(cos(tr.x), sin(tr.y), cos(tr.z)) * amp;
-            
-            // glitch
-            float gt = time * 0.1;
-            vec3 glitchIdx = floor(transformed / vec3(2.)) + floor(gt);
-            
-            vec3 glitchDir = vec3(hash(glitchIdx.xy), hash(glitchIdx.xz) * 0.5, hash(glitchIdx.yz));
-            glitchDir.xz -= 0.5;
-            glitchDir *= 5.;
-            float glitchShift = sin(gt * PI * 2. - PI * 0.5) * 0.5 + 0.5;
-            glitchDir *=  smoothstep(0.55, 0.95, glitchShift);
-            transformed += glitchDir;
+           
             
                         
             vPos = transformed;
